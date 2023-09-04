@@ -1,0 +1,181 @@
+.art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Playfair Display', serif;
+}
+
+
+
+
+.browse {
+  color: #a1a1a1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.top-text {
+  margin-top: 20px;
+  color: #a1a1a1;
+  font-size: 1.2rem;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.button {
+  border: 1px solid #707070;
+  background: transparent;
+  margin: 5px 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0);
+  border-color: #c77913;
+  color: #c77913;
+}
+
+.active {
+  background-color: #1e293b;
+  color: #fff;
+}
+
+.wrapper {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+div.gallery {
+  margin-right: 0;
+}
+
+
+div.gallery ul {
+	list-style-type: none;
+}
+
+div.gallery ul li, div.gallery li img {
+	-webkit-transition: all 0.1s ease-in-out;
+  	-moz-transition: all 0.1s ease-in-out;
+  	-o-transition: all 0.1s ease-in-out;
+  	transition: all 0.1s ease-in-out;
+}
+
+div.gallery ul li {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: 5px;
+	z-index: 0;
+}
+
+div.gallery ul li:hover {
+	z-index: 5;
+}
+
+
+div.gallery ul li img {
+	position: absolute;
+	left: 0;
+	top: 0;
+  border-radius: 5px;
+	border: 1px solid #a1a1a15e;
+	padding: 5px;
+	width: 280px;
+	height: 270px;
+	background: rgba(255, 255, 255, 0.288)
+}
+
+div.gallery ul li img:hover {
+	width: 400px;
+	height: 400px;
+	margin-top: -130px;
+	margin-left: -130px;
+	top: 35%;
+	left: 20%;
+}
+
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+.filter-close {
+  display: none;
+}
+
+.filters {
+  display: none;
+}
+
+@media (max-width: 992px) {
+
+  .buttons-container {
+    display: none;
+  }
+
+  .filter-container {
+    position: absolute;
+    right: 3em;
+    top: 50px;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+    z-index: 999;
+  }
+
+  .filter-browse {
+    color: #a1a1a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+  }
+
+  .filter-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .filters {
+    color: #a1a1a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  
+  .closeButton {
+    color: #ff7272;
+    border: 1px solid #ff7272;
+    background: transparent;
+    margin: 5px 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+}

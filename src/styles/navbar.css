@@ -1,0 +1,141 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-inline-start: 0;
+  margin-right: 20px;
+}
+
+.navbar ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 1rem;
+}
+
+.navbar ul li a {
+  color: #a1a1a1;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar ul li a:hover {
+  font-size: 1.2rem;
+  color: #c77913;
+  transition: all 0.3s ease;
+}
+
+.toggle-button {
+  cursor: pointer;
+  display: none;
+  margin-right: 10px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 2em;
+  top: 60px;
+  width: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+}
+
+.dropdown-menu ul {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.dropdown-menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #a1a1a1;
+}
+
+.dropdown-menu li a:hover {
+  text-decoration: none;
+  color: #c77913;
+  transition: all 0.3s ease;
+}
+
+.dropdown-close {
+  display: none;
+}
+
+
+@media(max-width: 992px) {
+
+  .logo {
+    width: 150px;
+  }
+
+  .navbar ul{
+    display: none;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .toggle-button {
+    display: block;
+  }
+
+  .dropdown-close {
+    display: none;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    right: 2em;
+    top: 60px;
+    width: 200px;
+    z-index: 99999;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+  }
+
+  .dropdown-menu ul {
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .dropdown-menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+  }
+
+  .dropdown-menu li a {
+    text-decoration: none;
+    color: #a1a1a1;
+  }
+
+  .dropdown-menu li a:hover {
+    text-decoration: none;
+    color: #c77913;
+    transition: all 0.3s ease;
+  }
+}
